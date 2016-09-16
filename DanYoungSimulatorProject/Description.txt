@@ -1,0 +1,49 @@
+Description.txt: The following is a list of files and their contents:
+
+Project Description.docx
+	This file is a paper describing what was done for the project, what problems
+	were faced, how those problems were overcome, and other information requested.
+	It was typed using Microsoft Word 2007.
+
+Sim.java
+	This file contains the main method for the program's execution. It can be
+	called from a command line with arguments -d, -a, or [filename], as 
+	specified in the team project handout. If no arguments are provided, however,
+	the program goes through a list of options that may be customized at
+	runtime. However, the input file can only be changed via commandline
+	interface. Currently, it uses input_default.txt for input. However, another
+	file, input_45_processes.txt, is also provided for user reference. 
+
+CPU_Simulation.java
+	This file contains most of the code to run the simulations of First-Come, 
+	First-Served *and* Round-Robin scheduling methods. Should the user desire, 
+	one can edit the Round-Robin "Quantum" constant to whatever is desired.
+	The given quantum seems to work well with the given input files. This file
+	starts simulations, prints results, gathers file input, switches vars, etc.
+	Most variables are static in this class, as no more than 1 CPU_Simulation
+	object should exist at any given time in a Sim execution.
+
+Process_.java
+	This file contains all methods and instance variables for the class 
+	"Process_". There are "get" and "set" methods for most of the variables,
+	a constructor used by the file input method in CPU_Simulation, and various
+	other whatnots.
+
+Description.txt
+	This file. A description of the files in the .zip folder and their contents.
+	
+input_default.txt
+	This file contains a set of integers as specified in the teamproject hand-
+	out. These integers are read by a Scanner object and populate an array of
+	"Process_" objects in a CPU_Simulation object. Contains data to populate
+	30 Process_ objects.
+
+input_45_processes.txt
+	This file contains a larger set of data to try with a simulation. To execute
+	the program using this input, just include the file name after "Sim".
+	IE: from command line, "java Sim -d input_45_processes.txt" would give
+	detailed information for FCFS and RR simulations of 45 processes.
+	Note, however, that typical command prompts do not store as many lines of data
+	as are required to read the entire output, so ideally, one should enter one
+	simulation at a time. One can run RR or FCFS on this data as follows:
+	IE: from command line, "java Sim -d -a RR input_45_processes.txt"

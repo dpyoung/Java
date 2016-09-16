@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	 
+	 
+	 <bean id="eyeDeeIfier" scope="singleton" class="icantnameapackagepackage.icantnameapackagedefault.EyeDeeIfier"></bean>
+	 <bean id="facebookFactory" scope="singleton" class="icantnameapackagepackage.icantnameapackagedefault.FacebookFactory"></bean>
+	<!-- <bean id="referenceTypeBuilderFactory" scope="singleton" class="parser.factory.ReferenceTypeBuilderFactory"></bean>
+	 
+	 <bean id="typeFactory" scope="singleton" class="parser.factory.TypeFactory"></bean>
+	 
+	 <bean id="fieldFactory" scope="singleton" class="parser.factory.FieldFactory"></bean>
+	 
+	 <bean id="methodBuilderFactory" scope="singleton" class="parser.factory.MethodBuilderFactory"></bean>
+	 
+	 <bean id="argumentFactory" scope="singleton" class="parser.factory.ArgumentFactory"></bean> -->
+	
+</beans>
